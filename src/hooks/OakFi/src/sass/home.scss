@@ -1,0 +1,76 @@
+@import 'theme';
+
+.home {     
+    background-color: var(--bgHomeColor);
+    .liquidity {
+        background: radial-gradient(83.82% 288% at 50% 50%, rgba(151, 71, 255, 0.3) 0%, rgba(151, 71, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        border-radius: 8px;        
+        border: 1px solid var(--borderDivColor);
+    }
+    .oak-reward {
+        background: radial-gradient(83.82% 288% at 50% 50%, rgba(243, 186, 47, 0.3) 0%, rgba(243, 186, 47, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        border-radius: 8px;        
+        border: 1px solid var(--borderDivColor);
+    }
+    .featured {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 107%;
+        .token-btn {
+            background: var(--bgTokenColor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 130px;
+            gap: 1rem;
+            font-size: 16px;
+            padding: 1.25rem 0px;
+            width: 16%;
+            border-radius: 2px;
+            border: 1px solid var(--borderDivColor);
+            img {
+                width: 32px;
+            }
+        }
+        .token-btn:hover {
+            background: var(--bgTokenColor);
+            border-color: var(--borderDivColor);
+        }
+    }
+    .featured:nth-child(2) {
+        position: relative;
+        left: -50px;
+    }
+    .featured:nth-child(3) {
+        position: relative;
+        left: -30px;
+    }
+    .oak-available {
+        background: radial-gradient(83.82% 288% at 50% 50%, rgba(40, 206, 138, 0.1) 0%, rgba(139, 249, 203, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        border-radius: 4px;
+        padding: 1.25rem 1.5rem;
+        border: 1px solid var(--borderDivColor);
+    }
+    .max-supply {
+        background: radial-gradient(83.82% 288% at 50% 50%, rgba(40, 206, 138, 0.2) 0%, rgba(139, 249, 203, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        border-radius: 4px;
+        border: 1px solid var(--borderDivColor);
+        height: 100%;
+        .bg-img {
+            position: absolute;
+            bottom: 0;
+            right: 0px;
+            opacity: .6;
+            width: 60%; 
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .featured {
+        justify-content: space-around !important;
+        gap: 1.5em;
+        left: 0px !important;
+        width: 100% !important;
+    }
+}

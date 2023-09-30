@@ -1,0 +1,17 @@
+@use 'layout';
+.stats-content {
+    width: 100%;
+    background: layout.$dark-bg-color;
+    .trader-control {
+        input {
+            background: layout.$dark-bg-color;
+            border: 1px solid #000;
+        }
+        button {
+            background: none;
+        }
+    }
+    .traders {
+        border: 1px solid layout.$dark-div-border;
+    }
+}

@@ -1,0 +1,106 @@
+@import 'theme';
+@import 'colors';
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Clash Display' !important;
+    font-style: normal;
+    a {
+        text-decoration: none !important;
+        color: #fff;
+    }
+    a:hover {
+        color: unset;
+    }
+    min-width: 374px;
+}
+.ff-clash {
+    font-family: 'Clash Display';
+}
+.ff-inter {
+    font-family: 'Inter';
+}
+.ff-grotesk {
+    font-family: 'Clash Grotesk';
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fs-12 {
+    font-size: 0.750em;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-48 {
+    font-size: 3em;
+}
+.line-height-15 {
+    line-height: 15px;
+}
+.line-height-30 {
+    line-height: 30px;
+}
+.lightGreen {
+    color: $lightGreen;
+}
+.blue700 {
+    color: $blue700;
+}
+.grey100 {
+    color: $grey100;
+}
+.grey300 {
+    color: $grey300;
+}
+.grey600 {
+    color: $grey600;
+}
+.grey700 {
+    color: $grey700;
+}
+.black200 {
+    color: $black200;
+}
+.h-85 {
+    height: 85%;
+}
+.App {
+    color: var(--bgAppColor);
+}
+.white-color {
+    color: #fff;
+}
+.h-content {
+    height: fit-content;
+}
+.bgDivColor {
+    background: var(--bgDivColor);
+}
+.bgDarkDivColor {
+    background: var(--bgDarkDivColor);
+}
+.flex-1 {
+    flex: 1;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.bg-none {
+    background: none !important;
+}
+.nav {
+    a {
+        color: #fff !important;
+    }
+}
+.main {
+    background-color: var(--bgHomeColor);
+    .header {
+        background: var(--bgHeaderColor);
+    }
+    input[type=text]:focus-visible {
+        outline: none;
+    }
+}

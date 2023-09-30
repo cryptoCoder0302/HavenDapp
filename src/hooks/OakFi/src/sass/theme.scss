@@ -1,0 +1,56 @@
+
+@import "colors";
+
+$themes: (
+  bgAppColor: (
+    darkTheme: $white,
+    lightTheme: $black,
+  ),
+  bgHomeColor: (
+    darkTheme: $blue700,
+    lightTheme: $blue700,
+  ),
+  bgBtnColor: (
+    darkTheme: $lightGreen,
+    lightTheme: $lightGreen,
+  ),
+  bgTokenColor: (
+    darkTheme: $black100,
+    lightTheme: $black100,
+  ),
+  borderDivColor: (
+    darkTheme: $grey200,
+    lightTheme: $grey200,
+  ),
+  bgHeaderColor: (
+    darkTheme: linear-gradient(30deg, $green150, $blue150, $purple150),
+    lightTheme: linear-gradient(90deg, $green150, $blue150, $purple150),
+  ),
+  bgDivColor: (
+    darkTheme: $grey400,
+    lightTheme: $grey400,
+  ),
+  bgDarkDivColor: (
+    darkTheme: $grey500,
+    lightTheme: $grey500,
+  ),
+
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+.dark-mode {
+  @include styles("darkTheme");
+}
+
+.light-mode {
+  @include styles("lightTheme");
+}

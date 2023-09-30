@@ -1,0 +1,41 @@
+@use 'layout';
+$price-bg-color: rgba(17,20,61);
+.dashboard-content {
+    .price-effect {
+        background-color: $price-bg-color;
+        color: white;
+        padding: 3rem 5rem;
+        height: 100%;
+        padding-bottom: 9em;
+        overflow: hidden;
+        img {
+            filter: invert(64%) sepia(33%) saturate(843%) hue-rotate(79deg) brightness(92%) contrast(91%);
+            position: absolute;
+            width: 100%;
+            height: 48%;
+            left: 0px;
+            opacity: 0.4;
+            visibility: visible;
+        }
+    }
+    .total-tokens {
+        div {
+            overflow-wrap: anywhere;
+            overflow: hidden;
+            padding: 18px 30px;
+        }
+    }
+}
+.dark {
+    .dashboard-content {
+        background: layout.$dark-bg-color;
+        color: #fff !important;
+        .price-effect {
+            $price-bg-color: rgba(27,28,48);
+            background-color: layout.$dark-div-bg;
+        }
+        .text-purple-300 {
+            color: #fff;
+        }
+    }
+}

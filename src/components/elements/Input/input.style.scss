@@ -1,0 +1,29 @@
+@import "../../../assets/styles/mixin.scss";
+.Textfield {
+  width: auto;
+  background-color: var(--grey);
+  padding: 8px;
+  border: 1px solid #ebb869;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  @include phone() {
+    gap: 0;
+  }
+}
+
+.dark {
+  background-color: #1f1f1f;
+}

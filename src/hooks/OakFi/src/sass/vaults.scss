@@ -1,0 +1,55 @@
+@import 'colors';
+.vaults {
+    .search-input {
+        input[type=text] {
+            padding: 15px 0;
+            padding-left: 2.2rem;
+            padding-right: 1rem;
+            letter-spacing: 1px;
+        }
+        input[type=text]::placeholder {
+            color: $grey300;
+        }
+        img {
+            top: 25px;
+            left: 25px;
+        }
+    }
+    svg {
+        fill: #fff;
+    }
+    .token-tbl {
+        .content {
+           min-width: 838px; 
+        }
+    }
+    a:hover {
+        color: unset;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .token-tbl {
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    // .row>* {
+    //     width: unset !important;
+    // }
+    .row {
+        .col-md-3 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+        .col-md-2 {
+            flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        .col-md-1 {
+            flex: 0 0 auto;
+            width: 8.33333333%;
+        }
+    }
+}

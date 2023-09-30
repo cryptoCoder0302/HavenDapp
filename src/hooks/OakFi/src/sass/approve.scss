@@ -1,0 +1,69 @@
+@import 'theme';
+@import 'colors';
+.approve {
+    .bgBlueColor {
+        background: var(--bgHomeColor);
+    }
+    .payment-type {
+        button {
+            background: unset;
+            color: $grey300;
+            padding: 10px 25px;
+            border: 0;
+        }
+        button.active {
+            background: var(--bgBtnColor);
+            color: var(--bgAppColor);
+        }
+    }
+    .progress-area {
+        .progress {
+            height: 10px;
+            background-color: $blue700;
+            .progress-item {
+                background-color: unset;
+            }
+            .progress-item.active {
+                background-color: $lightGreen;
+            }
+        }
+        .circle-items {
+            position: relative;
+            top: -14px;
+            .tooltip-btn {
+                background: unset;
+                border: 0;
+                padding: 0;
+            }
+            .tooltip-btn:focus {
+                box-shadow: none;
+            }
+            .circle {
+                content: "";
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: var(--bgHomeColor);
+                border: 1px solid $grey400;
+            }
+            .circle.active {
+                background-color: #fff;
+                border: 1px solid $lightGreen;
+            }
+        }
+    }
+    .history-type {
+        button {
+            background: unset;
+            color: $grey300;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: 0;
+        }
+        button.active {
+            background: var(--bgBtnColor);
+            color: var(--bgAppColor);
+        }
+    }
+    
+}
